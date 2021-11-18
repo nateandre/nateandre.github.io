@@ -1,0 +1,108 @@
+/* overall */
+
+html {
+    font-size: 16px;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+}
+
+/* text section */
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+}
+
+#contact {
+    padding-bottom: 0.3rem;
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    color: #F0F0F0;
+    display: none;
+}
+
+/* animation */
+
+#animation {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 45%;
+    display: -webkit-inline-box; 
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            -ms-grid-row-align: flex-end;
+        align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.bar {
+    width: 17px;
+    height: 25px;
+}
+
+#bar0 {
+    background: #F0F0F0;
+}
+
+#bar1 {
+    background: #E0E0E0;
+}
+
+#bar2 {
+    background: #D0D0D0;
+}
+
+#bar3 {
+    background: #385E71;
+}
+
+/* bottom - link section */
+
+#bot {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 0.5rem 0.5rem;
+}
+
+.link-icon {
+    color: #F0F0F0;
+    padding: 0rem 0.25rem;
+    font-size: 2.25rem !important;
+}
+
+/* small screen handling */
+
+@media only screen and (max-height: 330px) {
+    #animation {
+        display: none;
+    }   
+}
+
+@media only screen and (max-height: 100px) {
+    #bot {
+        display: none;
+    }   
+}
+
+@media only screen and (max-height: 70px) {
+    #dropdown,#contact {
+        display: none;
+    }   
+}
